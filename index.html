@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>وفاء | أعمال يدوية</title>
+  <meta name="description" content="معرض أعمال وفاء عبد الحميد اليدوية: كروشيه، تطريز، رسم، وريزن.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="#top" class="logo">وفاء<span>.</span></a>
+    <nav>
+      <a href="#gallery">أعمالي</a>
+      <a href="#about">عنّي</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">صُنع بإيد · بحب</p>
+      <h1>كل قطعة<br>ليها حكاية</h1>
+      <p class="lead">أهلاً بيكي في ركني الصغير — هنا بعرض شغلي اليدوي من كروشيه وتطريز ورسم وريزن. كل قطعة معمولة بإيدي وبصبر.</p>
+      <div class="hero-actions">
+        <a href="#gallery" class="btn">شوفي الأعمال</a>
+        <a href="#contact" class="btn ghost">اطلبي قطعة مخصوصة</a>
+      </div>
+      <svg class="thread" viewBox="0 0 600 120" aria-hidden="true">
+        <path d="M0 60 C 100 0, 150 120, 250 60 S 400 0, 480 60 S 560 110, 600 60" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="6 8"/>
+      </svg>
+    </section>
+
+    <section id="gallery" class="section">
+      <h2>أعمالي</h2>
+      <div class="filters" id="filters" role="tablist"></div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="about-art" aria-hidden="true">🧶</div>
+      <div>
+        <h2>عنّي</h2>
+        <p>أنا وفاء، بحب الشغل اليدوي من وأنا صغيرة. بدأت بالكروشيه وبعدين اتعلمت التطريز والرسم والريزن. بآمن إن الحاجة المعمولة بإيد ليها روح مختلفة عن أي حاجة جاهزة.</p>
+        <p>بعمل قطع للبيع، وهدايا مخصوصة بالاسم أو بالألوان اللي تحبيها.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>تواصلي معايا</h2>
+      <p>عايزة قطعة من المعروضين أو حاجة مخصوصة؟ ابعتيلي.</p>
+      <div class="contact-links">
+        <!-- غيّري الروابط دي لروابطك الحقيقية -->
+        <a class="btn" href="https://instagram.com/" target="_blank" rel="noopener">إنستجرام</a>
+        <a class="btn" href="https://wa.me/20XXXXXXXXXX" target="_blank" rel="noopener">واتساب</a>
+        <a class="btn ghost" href="mailto:you@example.com">إيميل</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>صُنع بحب © <span id="year"></span> وفاء عبد الحميد</footer>
+
+  <dialog id="lightbox">
+    <button class="close" aria-label="إغلاق">×</button>
+    <div class="lb-media" id="lbMedia"></div>
+    <h3 id="lbTitle"></h3>
+    <p id="lbDesc"></p>
+  </dialog>
+
+  <script src="works.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
